@@ -1,5 +1,6 @@
 // Utility for API requests
-const API_BASE = 'http://localhost:5000';
+// Set the backend base URL
+const API_BASE = 'https://version-2-0-backend.vercel.app';
 
 export async function apiGet(path, options = {}) {
   const res = await fetch(`${API_BASE}${path}`, {
